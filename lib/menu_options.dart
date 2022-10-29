@@ -13,7 +13,7 @@ class MenuOptions extends StatelessWidget {
     if (ip == '') {
       ip = '192.168.1.3';
     }
-    final double myWidth = MediaQuery.of(context).size.width / 4 - 2;
+    final double myWidth = MediaQuery.of(context).size.width / 4 - 1;
     dio.options.connectTimeout = 200;
     return GestureDetector(
       onTapDown: (v) {
@@ -23,7 +23,7 @@ class MenuOptions extends StatelessWidget {
         dio.get("http://$ip:1145/TapUp/$imagePath");
       },
       onTapCancel: () {
-        dio.get("http://$ip:1145/TapDown/$imagePath");
+        dio.get("http://$ip:1145/TapUp/$imagePath");
       },
       child: Container(
         width: myWidth,

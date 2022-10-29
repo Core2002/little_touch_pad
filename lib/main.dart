@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             TextField(
-              autofocus: true,
+              autofocus: false,
               controller: MyKeyBord.ipController,
               decoration: const InputDecoration(
                 labelText: "请输入被控端的ip地址",

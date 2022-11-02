@@ -49,15 +49,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 prefixIcon: Icon(Icons.network_check),
               ),
             ),
-            CupertinoButton(
-              onPressed: (() {
-                Navigator.pushNamed(context, "key_bord");
-              }),
-              color: Colors.blue,
-              child: const Text(
-                "调出键盘",
-                style: TextStyle(
-                  fontSize: 24,
+            Padding(
+              padding: const EdgeInsets.only(top: 32),
+              child: CupertinoButton(
+                onPressed: (() {
+                  Navigator.pushNamed(context, "key_bord");
+                }),
+                color: Colors.blue,
+                child: const Text(
+                  "调出键盘",
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
                 ),
               ),
             ),
